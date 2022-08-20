@@ -1,5 +1,9 @@
 document.getElementById('withdraw-btn').addEventListener('click', function(){
     const newWithdrawAmmount = getInputFieldValueById('withraw-field');
+    if(!newWithdrawAmmount){
+        alert('hellow')
+    }
+    else{
     const previousWithdrawAmmount = getTextFieldValueByID('withdraw-total');
     const totalWithdrawAmmount = previousWithdrawAmmount + newWithdrawAmmount;
 
@@ -9,4 +13,5 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     const previousTotalBlance = getTextFieldValueByID('Blance-total');
     const newBlancetotal = previousTotalBlance - newWithdrawAmmount;
     setTextElementValueById('Blance-total', newBlancetotal)
+}
 })

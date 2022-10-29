@@ -1,7 +1,7 @@
 document.getElementById('withdraw-btn').addEventListener('click', function(){
     const newWithdrawAmmount = getInputFieldValueById('withraw-field');
-    if(!newWithdrawAmmount){
-        alert('hellow')
+    if (!newWithdrawAmmount){
+        alert('Plese Enter your ammount!!')
     }
     else{
     const previousWithdrawAmmount = getTextFieldValueByID('withdraw-total');

@@ -1,7 +1,7 @@
 document.getElementById('deposit-btn').addEventListener('click', function(){
     const newDepositAmmount = getInputFieldValueById('deposit-field');
 if(!newDepositAmmount){
-    alert('hellow')
+    alert('Enter your deposit ammount')
 }
 else{
     const previousDepositTotal = getTextFieldValueByID('deposit-total');
